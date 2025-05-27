@@ -30,8 +30,7 @@ src/
     Post.css
   App.tsx
   main.tsx
-  types/
-    Post.ts
+
 ```
 
 ## 🛠️ Technologies Used
@@ -57,11 +56,6 @@ src/
 3. **Start the development server (Vite):**
    ```sh
    npm run dev
-   ```
-
-4. **Run tests (if available):**
-   ```sh
-   npm test
    ```
 
 ## 🧑‍💻 Component Design Choices
