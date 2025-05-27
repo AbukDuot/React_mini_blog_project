@@ -8,7 +8,7 @@ interface PostProps {
 
 const Post: React.FC<PostProps> = React.memo(({ post }) => {
   const isNew = new Date().getTime() - new Date(post.date).getTime() < 86400000;
-  const highlight = post.author === 'Alice';
+  const highlight = post.author === 'Sarah Amayo';
 
   return (
     <div className="post" style={{ backgroundColor: highlight ? '#f0f8ff' : 'white' }}>
