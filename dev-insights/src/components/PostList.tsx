@@ -1,6 +1,5 @@
 import React from 'react';
 import Post from './Post';
-import withLogger from '../hoc/withLogger';
 
 export type PostType = {
   id: number;
@@ -13,25 +12,31 @@ export type PostType = {
 const posts: PostType[] = [
   {
     id: 1,
-    title: 'Understanding useEffect',
-    author: 'David',
-    content: 'The useEffect hook lets you perform side effects in function components...',
-    date: new Date().toISOString(), // today's date
+    title: 'Getting Started with React: Components & Props',
+    author: 'Sarah Amayo',
+    content: 'React components are the building blocks of any React application. Learn how to create functional components and pass data using props for reusable UI elements.',
+    date: new Date().toISOString(),
   },
   {
     id: 2,
-    title: 'Tips for TypeScript in React',
-    author: 'Deborah',
-    content: 'Using TypeScript helps catch bugs early and improves code quality...',
-    date: '2025-05-17T10:00:00Z',
+    title: 'State Management Simplified: useState & useEffect',
+    author: 'Deng Michael ',
+    content: 'Managing state is crucial in React. Discover how useState lets you store values and how useEffect helps you handle side effects like data fetching and subscriptions.',
+    date: '2025-05-17',
+  },
+  {
+    id: 3,
+    title: 'Styling in React: CSS Modules & Styled Components',
+    author: 'Deborah Daniels',
+    content: 'Explore different ways to style your React apps, including CSS Modules for scoped styles and Styled Components for dynamic, component-level styling.',
+    date: '2025-05-10',
   },
 ];
 
-
-// eslint-disable-next-line react-refresh/only-export-components
 const PostList: React.FC = () => {
   return (
     <div className="post-list">
+      <h1>Latest Articles</h1>
       {posts.map(post => (
         <Post key={post.id} post={post} />
       ))}
@@ -39,5 +44,4 @@ const PostList: React.FC = () => {
   );
 };
 
-// eslint-disable-next-line react-refresh/only-export-components
-export default withLogger(PostList);
+export default PostList;
