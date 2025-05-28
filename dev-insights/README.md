@@ -131,5 +131,3 @@ The application provides a clean, responsive interface for the mini blog platfor
 5. Open a Pull Request.
 
 ---
-
-Happy coding! 🚀
